@@ -18,4 +18,10 @@ class App extends AbstractApi
     {
         return $this->get("/apps/{$id}", $params);
     }
+
+    public function custom($route, $params = [])
+    {
+        return $this->get($route, $params);
+    }
+
 }
